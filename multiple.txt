@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+class ABC
+{
+    public :
+        void fabc()
+        {
+            cout<<"ABC class";
+        }
+};
+
+class XYZ
+{
+    public :
+        void fxyz()
+        {
+            cout<<"XYZ class";
+        }
+};
+
+class PKW : public ABC, public XYZ
+{
+    public :
+        void fpkw()
+        {
+            cout<<"PKW class";
+        }
+};
+
+int main()
+{
+    PKW obj;
+    obj.fxyz();
+    return 0;
+}
